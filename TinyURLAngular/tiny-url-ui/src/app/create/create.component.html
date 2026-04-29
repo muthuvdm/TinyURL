@@ -1,6 +1,49 @@
-<input [(ngModel)]="url" placeholder="Enter URL" />
-<label>
-  <input type="checkbox" [(ngModel)]="isPrivate" /> Private
-</label>
+<div class="container">
 
-<button (click)="generate()">Generate</button>
+  <h1 class="title">Tiny URL</h1>
+
+  <!-- CREATE -->
+    <div class="card">
+    <div class="input-row">
+      <input [(ngModel)]="url" placeholder="Enter URL to shorten" />
+      
+      <label class="checkbox">
+        <input type="checkbox" [(ngModel)]="isPrivate" />
+        Private
+      </label>
+    </div>
+
+    <button class="btn" (click)="generate()">Generate</button>
+  </div>
+
+  <!-- VALIDATION MESSAGE -->
+  <div *ngIf="errorMessage" class="error">
+    {{ errorMessage }}
+  </div>
+
+
+  <!-- LIST -->
+  <h3 class="sub-title">Public URLs</h3>
+
+  <input class="search" [(ngModel)]="searchText" placeholder="Search URLs..." />
+
+  <div class="list">
+    <div class="item" *ngFor="let item of filteredUrls()">
+
+      <div class="left">
+        <a [href]="'https://localhost:7153/r/' + item.code" target="_blank">
+          https://localhost:7153/{{item.code}}
+        </a>
+        <p>{{item.originalUrl}}</p>
+      </div>
+
+      <div class="right">
+        <button class="copy" (click)="copy(item.code)">Copy</button>
+        <span>{{item.clickCount}} clicks</span>
+        <button class="delete" (click)="delete(item.code)">Delete</button>
+      </div>
+
+    </div>
+  </div>
+
+</div>

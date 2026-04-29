@@ -9,6 +9,7 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: './list.component.html'
 })
 export class ListComponent {
+
   urls: any[] = [];
 
   constructor(private http: HttpClient) {}
@@ -18,12 +19,18 @@ export class ListComponent {
   }
 
   load() {
-    this.http.get<any[]>('http://localhost:5000/api/url')
-      .subscribe(res => this.urls = res);
+    this.http.get<any[]>('http://localhost:5000/api/public')
+      .subscribe(res => {
+        this.urls = res;
+      });
   }
 
   delete(code: string) {
-    this.http.delete('http://localhost:5000/api/url/' + code)
+    this.http.delete('http://localhost:5000/api/delete/' + code)
       .subscribe(() => this.load());
+  }
+
+  copy(code: string) {
+    navigator.clipboard.writeText('http://localhost:5000/r/' + code);
   }
 }

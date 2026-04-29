@@ -46,8 +46,7 @@ public class TinyUrlController : ControllerBase
         return Ok(urls);
     }
 
-    // ✅ GET /{code}  (redirect)
-    [HttpGet("/{code}")]
+    [HttpGet("~/r/{code}")]
     public async Task<IActionResult> RedirectToUrl(string code)
     {
         var url = await _db.Urls.FirstOrDefaultAsync(x => x.Code == code);

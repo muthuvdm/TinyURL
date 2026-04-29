@@ -1,11 +1,18 @@
-<h2>All URLs</h2>
+<h3 class="sub-title">Public URLs</h3>
 
-<div *ngFor="let item of urls">
-  <a [href]="'http://localhost:5000/' + item.code" target="_blank">
-    {{item.code}}
-  </a>
+<div class="url-list">
+  <div class="url-item" *ngFor="let item of urls">
+    
+    <div class="url-text">
+      <a [href]="'http://localhost:5000/r/' + item.code" target="_blank">
+        http://localhost:5000/{{item.code}}
+      </a>
+      <div class="original">{{item.originalUrl}}</div>
+    </div>
 
-  | Clicks: {{item.clickCount}}
+    <button class="copy" (click)="copy(item.code)">Copy</button>
+    <span class="clicks">{{item.clickCount}} clicks</span>
+    <button class="delete" (click)="delete(item.code)">Delete</button>
 
-  <button (click)="delete(item.code)">Delete</button>
+  </div>
 </div>

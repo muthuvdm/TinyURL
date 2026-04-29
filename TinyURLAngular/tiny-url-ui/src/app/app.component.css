@@ -1,0 +1,136 @@
+/* Page Centering */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f6fa;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+/* Container */
+.container {
+  width: 500px;
+  text-align: center;
+}
+
+/* Title */
+.title {
+  color: #6c3fc5;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Card */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Input group */
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Input */
+input[type="text"], input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+/* Generate Button */
+.btn-generate {
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff4d6d, #7b2ff7);
+  cursor: pointer;
+}
+
+/* Subtitle */
+.sub-title {
+  margin-top: 25px;
+  color: #6c3fc5;
+}
+
+/* Search */
+.search {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+/* URL List */
+.url-list {
+  margin-top: 10px;
+}
+
+/* URL Item */
+.url-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* URL text */
+.url-text {
+  text-align: left;
+  flex: 1;
+}
+
+.url-text a {
+  color: #007bff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.original {
+  font-size: 12px;
+  color: #777;
+}
+
+/* Copy button */
+.copy {
+  margin-left: 10px;
+  background: #eef;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Click count */
+.clicks {
+  margin-left: 10px;
+  font-size: 12px;
+  color: #6c3fc5;
+}
+
+/* Delete button */
+.delete {
+  margin-left: 10px;
+  background: #ff4d6d;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
