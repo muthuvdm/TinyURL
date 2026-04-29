@@ -1,0 +1,11 @@
+<h2>All URLs</h2>
+
+<div *ngFor="let item of urls">
+  <a [href]="'http://localhost:5000/' + item.code" target="_blank">
+    {{item.code}}
+  </a>
+
+  | Clicks: {{item.clickCount}}
+
+  <button (click)="delete(item.code)">Delete</button>
+</div>
