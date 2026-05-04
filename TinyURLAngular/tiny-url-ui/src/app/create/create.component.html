@@ -31,8 +31,8 @@
     <div class="item" *ngFor="let item of filteredUrls()">
 
       <div class="left">
-        <a [href]="'https://localhost:7153/r/' + item.code" target="_blank">
-          https://localhost:7153/{{item.code}}
+        <a [href]="'https://tinyurl-api-f6b3a0e6fzhrc9ap.southeastasia-01.azurewebsites.net/r/' + item.code" target="_blank">
+          https://tinyurl-api-f6b3a0e6fzhrc9ap.southeastasia-01.azurewebsites.net/{{item.code}}
         </a>
         <p>{{item.originalUrl}}</p>
       </div>

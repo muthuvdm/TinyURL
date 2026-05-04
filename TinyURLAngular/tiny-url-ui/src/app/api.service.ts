@@ -3,7 +3,7 @@ import { Injectable } from "@angular/core";
 
 @Injectable({ providedIn: 'root' })
 export class ApiService {
-  baseUrl = 'https://localhost:7153/';
+  baseUrl = 'https://tinyurl-api-f6b3a0e6fzhrc9ap.southeastasia-01.azurewebsites.net/';
 
   constructor(private http: HttpClient) {}
 
