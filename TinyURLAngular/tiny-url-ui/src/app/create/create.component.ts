@@ -17,7 +17,7 @@ export class CreateComponent {
   searchText = '';
   urls: any[] = [];
 
-  private baseUrl = 'https://localhost:7153';
+  private baseUrl = 'https://tinyurl-api-f6b3a0e6fzhrc9ap.southeastasia-01.azurewebsites.net';
 
   constructor(private http: HttpClient) {}
 
