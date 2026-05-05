@@ -1,0 +1,7 @@
+# Use this workspace to collaborate
+workspace:
+  id: 28f94207-ffb4-4722-80c9-ae7964ec9ce8
+
+localResources:
+  specs:
+    - ..\TinyURLWebApi\TinyURLApi\TinyURLApi\obj\Debug\net8.0\EndpointInfo\TinyURLApi.json
