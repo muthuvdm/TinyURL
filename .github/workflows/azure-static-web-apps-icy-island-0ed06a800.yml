@@ -8,7 +8,6 @@ on:
 jobs:
   build_and_deploy_job:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
 
@@ -23,7 +22,7 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_ICY_ISLAND_0ED06A800 }}
           action: "upload"
-
-          app_location: "TinyURLAngular/tiny-url-ui/dist/tiny-url-ui"
+          app_location: "TinyURLAngular/tiny-url-ui"
           api_location: ""
+          output_location: "dist/tiny-url-ui/browser"   # ← relative to app_location
           skip_app_build: true
