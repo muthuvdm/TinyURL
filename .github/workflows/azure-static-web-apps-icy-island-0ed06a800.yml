@@ -28,8 +28,9 @@ jobs:
           action: "upload"
           ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
-          app_location: "TinyURLAngular/tiny-url-ui" # App source code path
-          api_location: "" # Api source code path - optional
+          app_location: "TinyURLAngular/tiny-url-ui"
+          api_location: ""
+          app_artifact_location: "dist/tiny-url-ui"
           
           ###### End of Repository/Build Configurations ######
 
