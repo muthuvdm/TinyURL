@@ -18,7 +18,7 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_ICY_BAY_0BE2E7C1E }}
           action: "upload"
 
-          app_location: "tiny-url-ui"
+          app_location: "TinyURLAngular/tiny-url-ui"
           api_location: ""
           output_location: "dist/tiny-url-ui"
           app_build_command: "npm install && npm run build"
