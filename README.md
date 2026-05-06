@@ -23,7 +23,7 @@ Users can generate short links, mark them as private/public, view click counts, 
 
 * Microsoft SQL Server / Azure SQL
 
-### 🔹 Cloud (Optional / Bonus)
+### 🔹 Cloud
 
 * Azure App Service
 * Azure SQL Database
@@ -117,7 +117,7 @@ https://localhost:7153/swagger
 
 ---
 
-## ☁️ Azure Deployment (Bonus)
+## ☁️ Azure Deployment
 
 * Backend deployed using Azure App Service
 * Database hosted in Azure SQL
